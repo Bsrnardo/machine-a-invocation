@@ -1,13 +1,35 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La machine a invocation</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <h1>La machine a invocation</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La machine a invocation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <h1>La Machine à Invocation</h1>
+
+      <form id="invocation">
+        <!-- / Mettre le nom d'utilisateur -->
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" />
+        <!-- Choisir la creature -->
+        <label for="creature">Créature :</label>
+        <!-- Liste de creatures -->
+        <select id="creature" name="creature">
+          <option value="chat-octo">🐙 le Chat-Octo</option>
+          <option value="dragon-debug">🐉 le Dragon-Debug</option>
+          <option value="licorne-css">🦄 la Licorne-CSS</option>
+          <option value="renard-refacto">🦊 le Renard-Refacto</option>
+        </select>
+        <button type="submit">Invoquer</button>
+      </form>
+      <!-- Zone de résultat -->
+      <section id="resultat" class="cache">
+  <p id="message"></p>
+</section>
+    </section>
+  </body>
 </html>
