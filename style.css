@@ -4,12 +4,12 @@
 
 :root {
   --couleur-fond: rgb(17, 17, 17);
-  --couleur-titre: rgb(245, 196, 0);
+  --couleur-titre: rgb(255, 204, 0);
   --couleur-texte: rgb(255, 255, 255);
   --couleur-bouton: rgb(230, 51, 41);
   --couleur-input-fond: rgb(26, 26, 26);
   --couleur-bordure: rgb(255, 255, 255);
-  --couleur-bordure-accent: rgb(245, 196, 0);
+  --couleur-bordure-accent: rgb(255, 204, 0);
 }
 
 *, *::before, *::after {
@@ -19,13 +19,12 @@
 }
 
 body {
-    background-image: url("phone.jpg");
+  background-image: url("phone.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: sans-serif;
-  padding: 40px 20px;
-  /* background-color: var(--couleur-fond); */
+  font-family: "Public Sans", sans-serif;
+  padding: 10px 20px;
   color: var(--couleur-texte);
   min-height: 100vh;
 }
@@ -33,7 +32,7 @@ body {
 section {
   background-color: transparent;
   border: none;
-  padding: 50px;
+  padding: 20px 40px 40px 40px;
   margin-bottom: 40px;
   max-width: 1200px;
   margin-left: auto;
@@ -44,11 +43,12 @@ h1 {
   background-color: transparent;
   font-family: "Montagu Slab", serif;
   font-weight: 700;
-  font-size: clamp(1.8rem, 6vw, 3rem);
+  font-size: clamp(2rem, 6vw, 3.5rem);
   color: var(--couleur-titre);
+  text-shadow: 5px 5px 0px rgb(207, 0, 0);
   padding: 0px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
   border: none;
   max-width: 100%;
   word-wrap: break-word;
@@ -66,8 +66,8 @@ form {
 }
 
 label[for="prenom"] {
-  background-color: transparent;
-  margin-top: 0;
+  background-color: rgb(17, 17, 17);
+  margin-top: 40px;
   color: var(--couleur-titre);
   padding: 8px 15px;
   font-weight: bold;
@@ -76,8 +76,8 @@ label[for="prenom"] {
 }
 
 label[for="creature"] {
-  background-color: transparent;
-  margin-top: 0;
+  background-color: rgb(17, 17, 17);
+  margin-top: 40px;
   color: var(--couleur-titre);
   padding: 8px 15px;
   font-weight: bold;
@@ -86,10 +86,10 @@ label[for="creature"] {
 }
 
 input[type="text"] {
-  background-color: transparent;
+  background-color: rgb(26, 26, 26, 0.7);
   color: var(--couleur-texte);
+  margin-top: -10px;
   border: none;
-  border-bottom: 2px solid var(--couleur-bordure);
   padding: 16px;
   font-size: 16px;
   width: 100%;
@@ -97,10 +97,10 @@ input[type="text"] {
 }
 
 select {
-  background-color: var(--couleur-input-fond);
+  background-color: rgb(26, 26, 26, 0.7);
   color: var(--couleur-texte);
   border: none;
-  border-bottom: 2px solid var(--couleur-bordure);
+  margin-top: -10px;
   padding: 16px;
   font-size: 16px;
   width: 100%;
@@ -112,6 +112,7 @@ button[type="submit"] {
   color: var(--couleur-texte);
   border: none;
   padding: 18px 35px;
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
@@ -128,8 +129,9 @@ button[type="submit"] {
 }
 
 #message {
-  background-color: transparent;
+  background-color: rgb(26, 26, 26, 0.8);
   color: var(--couleur-texte);
   padding: 15px;
-  font-weight: bold;
+  margin-top: 40px;
+  font-size: 1.8rem;
 }
